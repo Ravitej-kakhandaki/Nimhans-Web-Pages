@@ -1,0 +1,50 @@
+.footer {
+    height: 300px;
+    
+    margin-top:100px;
+    display: flex;
+    justify-content: center;
+    
+  }
+   
+  .footerDiv {
+    position: relative;
+    width: 1173px;
+    height: 190px;
+
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 100px;
+    gap: 100px;
+  }
+  .footerInfo{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    
+     margin-top: 25px;
+  }
+
+  .footerHeading{
+    color: rgba(3, 172, 242, 1)
+
+  }
+  .footerLink{
+    font-size: 18px;
+  }
+   
+
+  .footerText{
+    font-family: Poppins;
+                font-size: 25px;
+                font-weight: 400;
+                line-height: 30px;
+                text-align: left;
+  }
+   
+  .footerLogo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }

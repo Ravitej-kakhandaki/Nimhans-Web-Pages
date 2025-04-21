@@ -1,0 +1,143 @@
+ /* Feature Section */
+ .featureSection {
+    text-align: left;
+    background-color: white;padding-right: 40px;
+    margin-top: 100px;
+    position: relative;
+    margin-bottom: 250px;
+
+  }
+  .ourServicesImage{
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    
+     
+  }
+
+  /* .Ecillipse{
+    position: absolute;
+    top:-100px;
+    z-index: -2;
+    
+  } */
+
+
+  .title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 100px;
+    text-align: left;
+    padding-left: 10%;
+    margin-left: 100px;
+  }
+
+   
+
+  .featureContainer {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: right;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .featureCard {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeInScale 0.8s forwards;
+    width: 258px;
+    height: 310px;
+
+    border-radius: 30px;
+    background: rgba(89, 213, 247, 1);
+
+    box-shadow: 6px 6px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+
+  }
+
+  .featureCard:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+
+  .featureCard:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+
+  .featureCard:nth-child(3) {
+    animation-delay: 0.9s;
+  }
+   
+
+  .featureCardImage {
+    width: 100%;
+    border-radius: 10px;
+    /* margin-bottom: 15px; */
+  }
+
+  
+
+  .featureCardfont {
+    color: #0f0f0f;
+    /* margin-bottom: px; */
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+  }
+
+   .featureCardpara{
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .button {
+    color: #333;
+    padding: 10px 15px;
+    border: none;
+    width: 123px;
+    height: 40px;
+    padding: 15px 16px 5px 16px;
+
+    border-radius: 30px 0 30px 0;
+
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 134.5px;
+    background: rgba(114, 213, 0, 1);
+  }
+
+  .button:hover {
+    background-color: #a2e05f;
+  }
+
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }

@@ -1,0 +1,99 @@
+.NavBar,
+.navigators {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.NavBar {
+  height: 80px;
+  
+
+}
+.navigators {
+  list-style-type: none;
+  gap: 40px;
+   
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 15.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+.logo {
+  margin-left: 40px;
+}
+.credentials {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  padding-right: 20px;
+}
+.languageIcon{
+    width:19.5px; 
+    height:19.5px;
+
+}
+
+ 
+ 
+.Registers{
+  z-index: 99;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+      
+    width: 135px;
+    height: 40px;
+    background-color: rgb(13, 164, 10);
+    border-radius: 15px;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+
+
+}
+
+
+.Registers:hover {
+  background-color: rgb(10, 200, 10); /* Lighten the background color */
+  transform: scale(1.05); /* Slightly enlarge the button */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add a soft shadow */
+}
+
+.Registers:active {
+  transform: scale(0.95); /* Slightly shrink the button on click */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Reduce the shadow for a pressed effect */
+}
+.Lang{
+  width: 130px;
+  height: 38.5px;
+   background-color:  rgba(255, 255, 255, 1);
+   
+   
+  border-radius: 5px ;
+  border: 1px solid rgba(3, 172, 242, 1);  
+  display: flex;
+   align-items: center;
+  padding: 10px;
+
+}
+.select{
+  width: 120px;
+  height: 21px;
+   
+  border: transparent;
+
+
+}
+ 

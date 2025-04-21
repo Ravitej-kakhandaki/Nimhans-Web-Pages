@@ -1,0 +1,662 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    /* padding-top: 20px; */
+    width: 100%;
+    position: relative;
+    /* background-color: paleturquoise; */
+    background-color: white;
+  }
+  .NavBar,
+  .navigators {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .NavBar {
+    height: 80px;
+    z-index: 10;
+  }
+  .navigators {
+    list-style-type: none;
+    gap: 40px;
+     
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 15.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+  }
+  .logo {
+    margin-left: 40px;
+  }
+  .credentials {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    padding-right: 20px;
+  }
+   
+   
+  #Register{
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19.2px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+        
+      width: 135px;
+      height: 40px;
+      background-color: rgb(13, 164, 10);
+      border-radius: 15px;
+      color: white;
+      border: none;
+      transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+  
+
+  }
+
+
+  #Register:hover {
+    background-color: rgb(10, 200, 10); /* Lighten the background color */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add a soft shadow */
+}
+
+#Register:active {
+    transform: scale(0.95); /* Slightly shrink the button on click */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Reduce the shadow for a pressed effect */
+}
+  .Lang{
+    width: 130px;
+    height: 38.5px;
+     background-color:  rgba(255, 255, 255, 1);
+     
+     
+    border-radius: 5px ;
+    border: 1px solid rgba(3, 172, 242, 1);  
+    display: flex;
+     align-items: center;
+    padding: 10px;
+
+  }
+  #Languages{
+    width: 120px;
+    height: 21px;
+    padding-left: px;
+    border: none;
+
+
+  }
+  .heroSection {
+    padding-top: 40px;
+    /* position: relative; */
+    z-index: -1;
+  }
+  .HeroImage {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: -1;
+  }
+  .Oval {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  .blocks {
+    display: flex;
+    
+
+    padding-left: 150px;
+    gap: 80px;
+    margin-top: 50px;
+  }
+
+  .block {
+    background-color: white;
+    width: fit-content;
+    height: 150px;
+    align-content: center;
+
+    padding: 10px;
+    position: relative;
+  }
+    
+  
+  
+  .block:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.first::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height: 8px;
+  background: rgba(3, 172, 242, 1);
+  border-radius: 10px;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+.second::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height: 8px;
+  background: rgba(3, 172, 242, 1);
+  border-radius: 10px;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.third::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height: 8px;
+  background: rgba(3, 172, 242, 1);
+  border-radius: 10px;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+.first:hover::after {
+  width: 100%;
+  background-color: rgba(3, 200, 255, 1);
+}
+.second:hover::after {
+  width: 100%;
+  background-color: rgba(3, 200, 255, 1);
+}
+.third:hover::after {
+  width: 100%;
+  background-color: rgba(3, 200, 255, 1);
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+  .MoreInfo {
+    display: flex;
+    gap: 50px;
+    margin-left: 80px;
+    margin-top: 60px;
+  }
+  .more-info {
+    border: none;
+    background-color: transparent;
+    color: green;
+  }
+
+   
+
+  
+  .register {
+     width: 261px;
+    height: 41.13px;
+    border-radius: 24px;
+    font-family: Lato;
+    font-size: 24px;
+      font-weight: 700;
+      line-height: 28.8px;
+      text-align: center;
+      color: white;
+      border: none;
+      background: rgba(3, 172, 242, 1);
+      transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+
+  }
+
+  .register:hover {
+    background-color: rgba(3, 200, 255, 1); /* Lighten the button color */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.register:active {
+    transform: scale(0.95); /* Shrink slightly on click for a pressed effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reduce the shadow */
+}
+
+  
+
+  .Members {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+  }
+
+  .Member {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .locationDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+   
+
+   
+   
+
+   
+  
+
+  .Appointments {
+    width: 1215px;
+    height: 100px;
+    position: absolute;
+    top: 2175px;
+    left: 150px;
+    gap: 0px;
+    border-radius: 24px;
+    opacity: 0px;
+    background: linear-gradient(118.17deg, #03acf2 6.86%, #c8e6c9 103.41%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .AppointmentButton {
+    width: 313px;
+    height: 69px;
+    border-radius: 34.5px;
+    border: 1px;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-transform: uppercase;
+    color: rgba(3, 172, 242, 1);
+    cursor: pointer; /* Indicate the button is clickable */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.AppointmentButton:hover {
+    background-color: rgb(148, 210, 237); /* Change background on hover */
+    color: white; /* Change text color on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+.AppointmentButton:active {
+    transform: scale(0.95); /* Slightly shrink the button when clicked */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reduce the shadow for a pressed effect */
+}
+
+   
+   
+     
+   
+
+  footer {
+    height: 300px;
+    position: absolute;
+    top: 2400px;
+    left: 140px;
+    margin-top: 50px;
+  }
+  .ClinicsLocationsContainer {
+    margin-left: 110px;
+  }
+  .FooterDiv {
+    position: relative;
+    width: 1173px;
+    height: 190px;
+
+    display: flex;
+    /* justify-content: space-between; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 25px;
+  }
+  .FooterInfo {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    
+     margin-top: 25px;
+  }
+  .ColoredCircle{
+    position: absolute;
+    width: 700px;
+    height: 600px;
+    top: -280px;
+
+    left: -200px;
+    
+    opacity: 19.69%;
+    background: linear-gradient(142.77deg, #C8E6C9 15.84%, #B3E5FC 85.86%);
+    border-radius: 50%;
+    z-index: -1;
+    /* border: 4px solid black;
+    padding: 100px; */
+
+
+
+  }
+   
+  .FooterLogo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+   
+  .Icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(204, 199, 199);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .PlantSvg {
+    position: absolute;
+    left: 1030px;
+    bottom: 0;
+     }
+
+
+
+     .copyrightSection{
+       width: 100%;
+      height: 82px;
+      opacity: 0px;
+      background: rgba(217, 217, 217, 0.1);
+      border: 2px solid rgba(255, 255, 255, 1);
+      box-shadow: -89.13px 89.13px 89.13px 0px rgba(255, 255, 255, 0.1) inset;
+      box-shadow: 89.13px -89.13px 89.13px 0px rgba(165, 165, 165, 0.1) inset;
+      backdrop-filter: blur(178.26666259765625px);
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 2700px;
+      justify-content: center;
+      
+
+     }
+
+
+
+
+
+    
+
+       
+
+      /* Testimonial Section */
+      .testimonial-section {
+        padding-left: 60px;
+      }
+
+      .testimonial-section h2 {
+        font-family: Lato;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 76.8px;
+        text-align: left;
+        margin-bottom: 50px;
+         
+        
+      }
+
+      .testimonial-container {
+        display: flex;
+        /* justify-content: space-between; */
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+
+      .testimonial {
+        box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+
+        background: rgba(3, 190, 242, 0.66);
+
+        border-radius: 20px;
+        padding: 40px;
+        width: 300px;
+        height: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s forwards;
+        border-radius: 0 170px 170px 170px;
+        position: relative;
+      }
+
+      .testimonial:nth-child(1) {
+        animation-delay: 0.2s;
+      }
+
+      .testimonial:nth-child(2) {
+        animation-delay: 0.4s;
+      }
+
+      .testimonial:nth-child(3) {
+        animation-delay: 0.6s;
+      }
+
+      .testimonial p {
+        font-size: 20px;
+        color: #131212;
+        margin-bottom: 2px;
+        line-height: 1.5;
+        font-weight: 200;
+      }
+
+      .testimonial .stars {
+        color: #f6c739;
+        font-size: 2.5rem;
+        margin-bottom: 5px;
+      }
+ 
+
+      .testimonial .user img {
+        width: 70px;
+        height: 70px;
+        border-radius: 45px 45px 0 45px;
+        border: 2px solid #ddd;
+        position: absolute;
+        right: 0;
+      }
+
+      .testimonial .user div {
+        text-align: center;
+      }
+
+      .testimonial .user div strong {
+        font-size: 1rem;
+        color: #333;
+      }
+
+      .testimonial .user div p {
+        font-size: 0.9rem;
+        color: #777;
+      }
+
+      #walkImage {
+        position: absolute;
+        left: 1060px;
+        width: 460px;
+        height: 350px;
+      }
+
+      /* Feature Section */
+      .feature-section {
+        text-align: left;
+        background-color: white;padding-right: 40px;
+        margin-top: 150px;
+        position: relative;
+        margin-bottom: 250px;
+
+      }
+      .OurServicesImage{
+        position: absolute;
+        top: 70px;
+        left: 100px;
+      }
+
+      .Ecillipse{
+        position: absolute;
+        top:-100px;
+        
+      }
+
+
+      .feature-section h2 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: left;
+        padding-left: 10%;
+      }
+
+      .feature-section a {
+        font-size: 1rem;
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+        float: right;
+        padding-right: 10%;
+        margin-top: -40px;
+      }
+
+      .feature-container {
+        display: flex;
+        /* justify-content: space-between; */
+        justify-content: right;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+
+      .feature-card {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        opacity: 0;
+        transform: scale(0.9);
+        animation: fadeInScale 0.8s forwards;
+        width: 258px;
+        height: 310px;
+
+        border-radius: 30px;
+        background: rgba(89, 213, 247, 1);
+
+        box-shadow: 6px 6px 4px 0px rgba(0, 0, 0, 0.25);
+      }
+
+      .feature-card:nth-child(1) {
+        animation-delay: 0.3s;
+      }
+
+      .feature-card:nth-child(2) {
+        animation-delay: 0.6s;
+      }
+
+      .feature-card:nth-child(3) {
+        animation-delay: 0.9s;
+      }
+       
+
+      .feature-card img {
+        width: 100%;
+        border-radius: 10px;
+        /* margin-bottom: 15px; */
+      }
+
+      
+
+      .feature-card h3 {
+        color: #0f0f0f;
+        /* margin-bottom: px; */
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+      }
+
+      .feature-card p {
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+      }
+
+      .feature-card button {
+        color: #333;
+        padding: 10px 15px;
+        border: none;
+        width: 123px;
+        height: 40px;
+        padding: 15px 16px 5px 16px;
+
+        border-radius: 30px 0 30px 0;
+
+        font-weight: bold;
+        cursor: pointer;
+        margin-left: 134.5px;
+        background: rgba(114, 213, 0, 1);
+      }
+
+      .feature-card button:hover {
+        background-color: #a2e05f;
+      }
+
+      /* Animations */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInScale {
+        from {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }

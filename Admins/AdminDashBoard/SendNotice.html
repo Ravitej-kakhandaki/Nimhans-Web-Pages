@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SendNotice</title>
+    <link rel="stylesheet" href="SendNotice.css" />
+  </head>
+  <body>
+    <div class="OuterMost">
+      <div class="leftside">
+        <img src="Nimhans_logo 1.png" alt="Logo" class="Logo" />
+        <ul>
+           <li><a href="http://">Dashboard</li></a>
+          <li><a href="http://">Reports</li></a>
+          <li><a href="http://"> Reports on Review</li></a>
+           <li><a href="http://">Predictive Analytics</li></a>
+            <li><a href="http://">Download Reports</li></a>
+           <li><a href="http://">Send Notice</li></a>
+           <li><a href="http://">Add/Edit Vendors</li></a>
+           <li><a href="http://">Report Adverse Event</li></a>
+           <li><a href="http://">Add/Edit Reviewers</li></a>
+           <li><a href="http://">Truncated Reports</li></a>
+          <li><a href="http://">Help</a></li>
+        </ul>
+      </div>
+
+
+
+
+      <div class="rightside">
+        <div class="searchdiv">
+          <form class="search-container">
+            <input type="text" id="search-bar" placeholder="Search Here...">
+            <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+          </form>
+          <img src="icon_dashboard.png" alt="" id="alert" />
+          <p class="ABC">ABC</p>
+          <div class="A">A</div>
+        </div>
+         <div class="Container">
+            <div class="form-container">
+                <h1 class="form-title">NOTICE</h1>
+                <p class="form-instructions">
+                  Please Select the Correct Vendor/Manufacturer and Also Select The
+                  Correct Device With Adverse Events Before Final Submission, The Action
+                  Is Not Reversible
+                </p>
+                <form id="notice-form">
+                  <div class="form-row">
+                    <div class="form-group">
+                       
+                      <input
+                        type="text"
+                        id="coordinator-name"
+                        name="coordinator-name"
+                        placeholder="Name of the coordinator"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      
+                      <input type="text" id="vendor-name" name="vendor-name" placeholder="Device Vendor/Manufacturer" required />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                       
+                      <input
+                        type="text"
+                        id="device-name"
+                        name="device-name"
+                         placeholder="Device Name"
+                         required
+                      />
+                    </div>
+                    <div class="form-group">
+                       
+                      <input type="text" id="event-name" name="event-name"  placeholder="Event Name" />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group full-width">
+                      
+                      
+                      <textarea
+                        id="event-description"
+                        name="event-description"
+                        rows="4"
+                        placeholder="Describe the Adverse Event Here"
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+                  
+                    <div class="checkbox-group">
+                      <input type="checkbox" id="terms" name="terms" required />
+                      
+                        <p class="termsCondition"> I have read and accept the Terms of
+                        <a href="#" class="link">Service</a> &
+                        <a href="#" class="link">Privacy Policy</a></p>
+                      
+                    
+                  
+                  
+                    <button type="submit" class="submit-button">SEND MESSAGE</button>
+                  </div>
+                </form>
+              </div>
+              <script src="Notice.js"></script>
+
+         </div>
+          
+         
+             
+       </div>
+         
+
+      
+         
+           
+           
+        
+      
+    </div>
+  </body>
+</html>
